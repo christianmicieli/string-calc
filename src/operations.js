@@ -9,6 +9,10 @@ function concat (  a, b ) {
     
 }
 
+function capitals ( a ) {
+    return a.toUpperCase();
+}
 
 
-module.exports = { removeSpaces,concat };
+
+module.exports = { removeSpaces,concat, capitals };
