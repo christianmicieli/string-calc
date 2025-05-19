@@ -13,6 +13,9 @@ function capitals ( a ) {
     return a.toUpperCase();
 }
 
+function toLowerCase ( a ) {
+    return a.toLowerCase();
+}
 
 
-module.exports = { removeSpaces,concat, capitals };
+module.exports = { removeSpaces,concat, capitals, toLowerCase };
