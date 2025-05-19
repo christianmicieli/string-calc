@@ -2,6 +2,7 @@
 
 const removeSpaces = require ('../src/operations').removeSpaces
 const concat = require ('../src/operations').concat
+const capitals = require ('../src/operations').capitals
 
 
 
@@ -24,3 +25,9 @@ test ( 'Ciao come stai, tutto bene?', () => {
 
 } );
 
+
+test ( 'Ciao come stai, tutto bene?', () => {
+    expect( capitals("Ciao come stai, tutto bene?") ).toBe("CIAO COME STAI, TUTTO BENE?" );
+
+}
+);
