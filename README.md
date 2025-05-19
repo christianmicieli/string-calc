@@ -1,6 +1,6 @@
 # SSGS STRING IN NODE.JS
 
-Una semplice calcolatrice per operazioni sulle stringhe : concatenazione e rimozione spazi.
+Una semplice calcolatrice per operazioni sulle stringhe : concatenazione, rimozione spazi, rendere una stringa tutta in maiuscola 
 
 ## Prerequisiti
 
