@@ -1,6 +1,7 @@
 
 const removeSpaces = require ('./operations').removeSpaces
 const concat = require ('./operations').concat
+const capitals = require ('./operations').capitals
 
 
 const readline = require('readline').createInterface({
@@ -9,7 +10,7 @@ const readline = require('readline').createInterface({
   });
 
 function string () {
-  console.log ("\nOperazioni disponibili: \n 0.Per Uscire \n 1.Rimozione Spazi \n 2.Concatenaizone stringhe\n ");
+  console.log ("\nOperazioni disponibili: \n 0.Per Uscire \n 1.Rimozione Spazi \n 2.Concatenaizone stringhe\n 3.Maiuscolo");
 
   readline.question('Che operazione vuoi eseguire? ', op =>{
   
@@ -30,6 +31,13 @@ function string () {
                 console.log("Risultato concatenazione:", concat(str1, str2));
                 string();
               });
+            });
+            break;
+          
+          case '3':
+            readline.question('Inserisci la stringa: ', str1 => {
+              console.log("Risultato maiuscolo:", capitals(str1));
+              string();
             });
             break;
             
