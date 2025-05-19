@@ -2,6 +2,7 @@
 const removeSpaces = require ('./operations').removeSpaces
 const concat = require ('./operations').concat
 const capitals = require ('./operations').capitals
+const toLowerCase = require ('./operations').toLowerCase
 
 
 const readline = require('readline').createInterface({
@@ -10,7 +11,7 @@ const readline = require('readline').createInterface({
   });
 
 function string () {
-  console.log ("\nOperazioni disponibili: \n 0.Per Uscire \n 1.Rimozione Spazi \n 2.Concatenaizone stringhe\n 3.Maiuscolo");
+  console.log ("\nOperazioni disponibili: \n 0.Per Uscire \n 1.Rimozione Spazi \n 2.Concatenaizone stringhe\n 3.Maiuscolo\n 4.Minuscolo\n");
 
   readline.question('Che operazione vuoi eseguire? ', op =>{
   
@@ -40,7 +41,12 @@ function string () {
               string();
             });
             break;
-            
+          case '4': 
+            readline.question('Inserisci la stringa: ', str1 => {
+              console.log("Risultato minuscolo:", toLowerCase(str1));
+              string();
+            });
+            break;
           default:
             console.log('Operazione non valida');
 
