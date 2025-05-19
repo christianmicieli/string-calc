@@ -1,0 +1,23 @@
+{
+    "name": "calc-string",
+    "version": "1.0.0",
+    "description": "Calcolatrice capace di eseguire operazioni semplici sulle stringhe: concatenazione e rimozione spazi",
+    "main": "string.js",
+    "scripts": {
+      "start": "node ./src/string.js",
+      "test": "jest --coverage"
+    },
+    "keywords": ["string", "calculator", "calculator-string"],
+    "author": "Christian Micieli <Micieli843@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+      "jest": "^29.7.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/christianmicieli/string-calc.git"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
