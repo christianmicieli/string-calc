@@ -3,6 +3,7 @@
 const removeSpaces = require ('../src/operations').removeSpaces
 const concat = require ('../src/operations').concat
 const capitals = require ('../src/operations').capitals
+const toLowerCase = require ('../src/operations').toLowerCase
 
 
 
@@ -31,3 +32,8 @@ test ( 'Ciao come stai, tutto bene?', () => {
 
 }
 );
+
+test ( 'Ciao come stai, tutto bene?', () => {
+    expect( toLowerCase("Ciao COME Stai, Tutto bEnE?") ).toBe("ciao come stai, tutto bene?" );
+
+});
